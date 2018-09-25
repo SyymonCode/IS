@@ -67,19 +67,19 @@ Practica 1. Introduccion a Github, Markdown y Eclipse.
 * Habilidad de resolver conflictos entre versiones de distintos programadores.
 * Copias independientes.
 
-###GitHub
+### GitHub
 
 * Documentacion de requerimientos.
 * Ver el avance del desarrollo.
 
-###0.2 Instalación y configuración
+### 0.2 Instalación y configuración
 
 ### Instalación
 * Para instalar Git: https://git-scm.com.
 * En el curso se utlizará Git a través de líneas de comandos.
 * Para eclipse existen *plugins* integrados:https://www.eclipse.org/egit.
 
-###configuración básica
+### configuración básica
    Nombre del administrador:
    `git config --global user.name "Antonio M. Durán Rosal"`
    Correo electrónico:
