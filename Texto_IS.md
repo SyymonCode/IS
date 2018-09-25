@@ -46,3 +46,47 @@ Practica 1. Introduccion a Github, Markdown y Eclipse.
 * Conocimiento del camvbio que ha provocado que el sistema no funcione.  
 * Fallos en el disco duro que suponen riesgos de información desactualizada.  
 * Satisfacer el compromiso de entrega.  
+
+### Git y Github
+
+### Git
+
+:sistema para el control distribuido de versiones de código. Fundamentalmente permite:
+* Dar seguimiento a los cambios realizados sobre un archivo.
+* Almacenar una copia de los cambios.
+
+### Github
+
+:sitio web donde podemos subir una copia de nuestro repositorio Git.
+
+### Ventajas
+### Git
+* Habilidad de deshacer cambios.
+* Historial y documentación de cambios.
+* Múltiples versiones de código.
+* Habilidad de resolver conflictos entre versiones de distintos programadores.
+* Copias independientes.
+
+###GitHub
+
+* Documentacion de requerimientos.
+* Ver el avance del desarrollo.
+
+###0.2 Instalación y configuración
+
+### Instalación
+* Para instalar Git: https://git-scm.com.
+* En el curso se utlizará Git a través de líneas de comandos.
+* Para eclipse existen *plugins* integrados:https://www.eclipse.org/egit.
+
+###configuración básica
+   Nombre del administrador:
+   `git config --global user.name "Antonio M. Durán Rosal"`
+   Correo electrónico:
+   `git config --global user.email aduran@uco.es`
+   Editor de texto:
+   `git config --global core.editor "gedit"`
+   Color de la interfaz:
+   `git config --global color.ui true`
+   Listado de la configuración:
+   `git config --list`
