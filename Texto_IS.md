@@ -34,10 +34,10 @@
 
 #### Motivacion
 
-    * Código efímero.  
-    * Necesidad de mantener todas las versiones del código fuente.  
-    * Problemas en organizaciones para mantener el código actualizado.  
-    * Coherencia de versiones.  
-    * Conocimiento del camvbio que ha provocado que el sistema no funcione.  
-    * Fallos en el disco duro que suponen riesgos de información desactualizada.  
-    * Satisfacer el compromiso de entrega.  
+* Código efímero.  
+* Necesidad de mantener todas las versiones del código fuente.  
+* Problemas en organizaciones para mantener el código actualizado.  
+* Coherencia de versiones.  
+* Conocimiento del camvbio que ha provocado que el sistema no funcione.  
+* Fallos en el disco duro que suponen riesgos de información desactualizada.  
+* Satisfacer el compromiso de entrega.  
