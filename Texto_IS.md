@@ -27,11 +27,11 @@
     * Se evaluará la realización de un pequeño tutorial de Github con los contenidos aprendidos durante las dos primeras sesiones practicas. El lenguaje de formateado sera Markdown.
     * El repostiorio de Github contendrá tanto el tutorial como el historial de cambios realizados por los integrantes del grupo.
 
-###0. Git
+### 0. Git
 
-####0.1. Introducción
+#### 0.1. Introducción
 
-####Motivacion
+#### Motivacion
 
     * Código efímero.
     * Necesidad de mantener todas las versiones del código fuente.
