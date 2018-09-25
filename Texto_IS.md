@@ -39,7 +39,7 @@ Practica 1. Introudcción a Git, Markdown y Eclipse
 Motivación**
 
 
-me gustan las patatas fritas
+me gustan las patatas fritas azules
 
     Código efimero
 
