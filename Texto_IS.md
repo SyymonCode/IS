@@ -26,3 +26,17 @@
     * Se debe entregar en moodle la direccion del repositorio de Github.
     * Se evaluará la realización de un pequeño tutorial de Github con los contenidos aprendidos durante las dos primeras sesiones practicas. El lenguaje de formateado sera Markdown.
     * El repostiorio de Github contendrá tanto el tutorial como el historial de cambios realizados por los integrantes del grupo.
+
+###0. Git
+
+####0.1. Introducción
+
+####Motivacion
+
+    * Código efímero.
+    * Necesidad de mantener todas las versiones del código fuente.
+    * Problemas en organizaciones para mantener el código actualizado.
+    * Coherencia de versiones.
+    * Conocimiento del camvbio que ha provocado que el sistema no funcione.
+    * Fallos en el disco duro que suponen riesgos de información desactualizada.
+    * Satisfacer el compromiso de entrega.
