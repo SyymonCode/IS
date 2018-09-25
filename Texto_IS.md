@@ -23,6 +23,8 @@ Practica 1. Introduccion a Github, Markdown y Eclipse.
 
 1.4. Recursos.
 
+---
+
 **Evaluación**
 
 
