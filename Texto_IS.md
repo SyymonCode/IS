@@ -38,6 +38,9 @@ Practica 1. Introudcción a Git, Markdown y Eclipse
 
 Motivación**
 
+
+me gustan las patatas fritas
+
     Código efimero
 
      Necesidad de mantener todas las versiones del codigo de fuente.
