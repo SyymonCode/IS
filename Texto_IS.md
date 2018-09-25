@@ -23,7 +23,7 @@
 **Evaluación**
 
 * Las entregas en moodle se realizaran por medio del representante o líder de cada grupo.
-      * Pene
+  * Pene
 * Se debe entregar en moodle la direccion del repositorio de Github.
 * Se evaluará la realización de un pequeño tutorial de Github con los contenidos aprendidos durante las dos primeras sesiones practicas. El lenguaje de formateado sera Markdown.
 * El repostiorio de Github contendrá tanto el tutorial como el historial de cambios realizados por los integrantes del grupo.
