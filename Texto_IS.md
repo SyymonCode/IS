@@ -1,5 +1,5 @@
-Practica 1. Introudcción a Git, Markdown y Eclipse
-
+Practica 1. Introduccion a Github, Markdown y Eclipse.
+---
 **Contenidos**
 
 1.1. Git.
