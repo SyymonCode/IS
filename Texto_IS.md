@@ -74,7 +74,7 @@ Practica 1. Introduccion a Github, Markdown y Eclipse.
 
 ### 0.2 Instalación y configuración
 
-### Instalación
+### Instalacióno
 * Para instalar Git: https://git-scm.com.
 * En el curso se utlizará Git a través de líneas de comandos.
 * Para eclipse existen *plugins* integrados:https://www.eclipse.org/egit.
