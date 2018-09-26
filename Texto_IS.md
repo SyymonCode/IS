@@ -1,5 +1,5 @@
-Practica 1. Introduccion a Github, Markdown y Eclipse.
----
+# Practica 1. Introduccion a Github, Markdown y Eclipse.
+
 
 **Contenidos**
 
@@ -33,7 +33,8 @@ Practica 1. Introduccion a Github, Markdown y Eclipse.
 * Se evaluará la realización de un pequeño tutorial de Github con los contenidos aprendidos durante las dos primeras sesiones practicas. El lenguaje de formateado sera Markdown.
 * El repostiorio de Github contendrá tanto el tutorial como el historial de cambios realizados por los integrantes del grupo.
 
-### 0. Git
+## 0. Git
+---
 
 #### 0.1. Introducción
 
@@ -47,7 +48,7 @@ Practica 1. Introduccion a Github, Markdown y Eclipse.
 * Fallos en el disco duro que suponen riesgos de información desactualizada.
 * Satisfacer el compromiso de entrega.
 
-### Git y Github
+## Git y Github
 
 ### Git
 
@@ -55,11 +56,11 @@ Practica 1. Introduccion a Github, Markdown y Eclipse.
 * Dar seguimiento a los cambios realizados sobre un archivo.
 * Almacenar una copia de los cambios.
 
-### Github
+## Github
 
 :sitio web donde podemos subir una copia de nuestro repositorio Git.
 
-### Ventajas
+## Ventajas
 ### Git
 * Habilidad de deshacer cambios.
 * Historial y documentación de cambios.
@@ -67,43 +68,44 @@ Practica 1. Introduccion a Github, Markdown y Eclipse.
 * Habilidad de resolver conflictos entre versiones de distintos programadores.
 * Copias independientes.
 
-### GitHub
+## GitHub
 
 * Documentacion de requerimientos.
 * Ver el avance del desarrollo.
 
-### 0.2 Instalación y configuración
+## 0.2 Instalación y configuración
+---
 
 ### Instalación
 * Para instalar Git: https://git-scm.com.
 * En el curso se utlizará Git a través de líneas de comandos.
 * Para eclipse existen *plugins* integrados:https://www.eclipse.org/egit.
 
-### configuración básica
+## configuración básica
    Nombre del administrador:
-   ~~~  
-   git config --global user.name "Antonio M. Durán Rosal"
-   ~~~  
-   Correo electrónico:
-   ~~~  
-   git config --global user.email aduran@uco.es
-   ~~~  
-   Editor de texto:  
-   ~~~
-   git config --global core.editor "gedit"  
-   ~~~
-   Color de la interfaz:  
-   ~~~
-   git config --global color.ui true  
-   ~~~
-   Listado de la configuración:  
-   ~~~
-   git config --list  
-   ~~~
-
-### 0.3 Uso básico
+~~~  
+git config --global user.name "Antonio M. Durán Rosal"
+~~~  
+Correo electrónico:
+~~~  
+git config --global user.email aduran@uco.es
+~~~  
+Editor de texto:  
+~~~
+git config --global core.editor "gedit"  
+~~~
+Color de la interfaz:  
+~~~
+git config --global color.ui true  
+~~~
+Listado de la configuración:  
+~~~
+git config --list  
+~~~
+## 0.3 Uso básico
+---
 ### Los tres estados de Git
-### Comandos basicos I
+## Comandos basicos I
 Iniciar repositorio en un direcotrio:  
 ~~~
 git init  
@@ -124,7 +126,7 @@ Historial de commits:
 ~~~
 git log  
 ~~~
-### Comandos básicos II
+## Comandos básicos II
 Ayuda del listado anterior:  
 ~~~
 git help log  
@@ -146,7 +148,7 @@ Ver cambios en el directorio:
 git status  
 ~~~
 
-### Comandos básicos III
+## Comandos básicos III
 
 Ver diferencia entre ficheros en el directorio y el repositorio de git:
 ~~~  
@@ -162,7 +164,7 @@ git rm archivo
 git commit -m "Mensaje"`
 ~~~
 
-### Comandos básicos IV
+## Comandos básicos IV
 Deshacer cambios con git:  
 ~~~
 git checkout -- nombre_fichero  
