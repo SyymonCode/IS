@@ -106,10 +106,12 @@ git config --list
 ---
 ### Los tres estados de Git
 ## Comandos basicos I
-Iniciar repositorio en un direcotrio:  
+Iniciar repositorio en un directorio:  
+
 ~~~
 git init  
 ~~~
+
 Agregar cambios al area de *staging*:  
 ~~~
 git add
