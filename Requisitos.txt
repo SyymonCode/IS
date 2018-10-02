@@ -1,0 +1,20 @@
+                                                                    Practica 2 REQUISITOS
+                                                                    ---------------------
+Se debe entregar, un documento de extraccion de requisitos donde estan las partes interesadas, lo sdatros que debe almacenar, los requisitos funciojnales y no
+funcionales y la priorizacion de los mismos.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-INTRODUCCION A USUARIO:Requisito mas importante.
+-BUSCAR USUARIO:Tambien muy importante.
+-DATOS DEL USUARIO:DNI NOMBRE, APELLIDOS, TELEFONO,EMAIL CORPORATIVO, DIRECCION POSTAL, CURSO MAS ALTO EN EL QUE SE HA MATRICULADO, FECHA DE NACIMIENTO, EQUIPO,
+LIDER O NO
+-IDENTIFICADOR PRINCIPAL:DNI, pero se le podra buscar por su apellido tambien.
+-ELIMINAR ALUMNO:Por DNI o por apellido o por equipo
+-MODIFICAR ALUMNO:Por DNI o por apellido o por equipo
+-MOSTRAR EL LISTADO DE ALUMNOS:Ordenado alfabeticamente, ya sea apellido o nombre, o por orden numerico de DNI o por el curso mas alto en el que este mariculado
+Todo ello por orden ascendente y descendente
+-BUSCAR ALMUNO:Por DNI o apellido o por equipo
+-MOSTRAR ALUMNO:Por DNI o apellido o por equipo
+-Diferenciar entre tiempo completo y parcial
+-PODER RECUPERAR LOS DATOS SI SE BORRAN:(Fichero binario si o si) Guardar y recuperar datos
+-Guardado automatico cada vez que se realice una operacion
+-DIFERENCIAR ENTRE LIDER DE EQUIPO : si se elimina un alumno que es lider, se deja el equipo sin lider o que se pida el lider en ese momento
