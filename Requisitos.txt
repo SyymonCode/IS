@@ -18,4 +18,3 @@ Todo ello por orden ascendente y descendente
 -PODER RECUPERAR LOS DATOS SI SE BORRAN:(Fichero binario si o si) Guardar y recuperar datos
 -Guardado automatico cada vez que se realice una operacion
 -DIFERENCIAR ENTRE LIDER DE EQUIPO : si se elimina un alumno que es lider, se deja el equipo sin lider o que se pida el lider en ese momento
--bla
