@@ -3,9 +3,7 @@
 **Partes interesadas**  
 * Profesores
 * Alumnos
-&nbsp
-&nbsp
-&nbsp
+
 **Datos que debe de almacenar:**  
 * DNI
 * Nombre
@@ -19,7 +17,6 @@
 * Equipo al que forma parte (opcional)
 * Si es líder o no (opcional)
 
-
 **Requisitos funcionales:**  
 * Cargar datos
 * Guardar datos
@@ -29,7 +26,6 @@
 * Mostrar listado
 * Editar alumnos
 * Borrar alumnos
-
 
 **Requisitos no funcionales:**
 * Lenguaje de programación C++
@@ -47,7 +43,6 @@
 * Solo un líder por grupo
 * Un grupo puede no tener líder
 * Menú de selección
-
 
 **Prioridad de requisitos:**
 1. Guardar y cargar
