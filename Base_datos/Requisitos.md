@@ -2,12 +2,10 @@
 ---
 **Partes interesadas**  
 * Profesores
-* Alumnos  
-  
-  
-  
-  
-  
+* Alumnos
+&nbsp
+&nbsp
+&nbsp
 **Datos que debe de almacenar:**  
 * DNI
 * Nombre
