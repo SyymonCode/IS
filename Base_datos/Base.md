@@ -1,7 +1,4 @@
 # Historias de usuario
-2º Documento a entregar con lo siguiente:
-**Historias de usuario: un archivo Markdown por cada historia
-de usuario.**  
 ***
 **(Anverso):**  
 **ID:** 011 **Cargar datos**  
