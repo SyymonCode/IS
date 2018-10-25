@@ -1,6 +1,6 @@
 # Requisitos
 ---
-**Partes interesadas**  
+**Partes interesadas:**  
 * Profesores
 * Alumnos
 
