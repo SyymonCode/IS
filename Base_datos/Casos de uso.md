@@ -3,9 +3,11 @@
 ## Cargar datos
 
 **ID:** 011
+
 **Breve descripción:** Crea un archivo nuevo o lo carga si no existe
 
 **Actores principales:** Usuario
+
 **Actores secundarios:** Alumnos
 
 **Precondiciones:**
@@ -23,9 +25,11 @@
 ## Guardar datos
 
 **ID:** 012
+
 **Breve descripción:** Se guardan los datos del programa y esos mismos cambios se guardan en el fichero auxiliar.
 
 **Actores principales:** Usuario
+
 **Actores secundarios:** Alumnos
 
 **Precondiciones:**
@@ -44,9 +48,11 @@
 ## Introducir alumnos
 
 **ID:** 020
+
 **Breve descripción:** El sistema permite introducir usuario
 
 **Actores principales:** Usuario
+
 **Actores secundarios:** Alumnos
 
 **Precondiciones:**
@@ -66,9 +72,11 @@
 ## Buscar alumnos
 
 **ID:** 030
+
 **Breve descripción:** El sistema permite buscar a una alumno por DNI, apellido o grupo.
 
 **Actores principales:** Usuario
+
 **Actores secundarios:** Alumnos
 
 **Precondiciones:**
@@ -88,9 +96,11 @@
 ## Mostrar alumnos
 
 **ID:** 041
+
 **Breve descripción:** El sistema permite mostrar los alumnos buscándolos por su DNI
 
 **Actores principales:** Usuario
+
 **Actores secundarios:** Alumnos
 
 **Precondiciones:**
@@ -109,9 +119,11 @@
 ## Mostrar listado
 
 **ID:** 042
+
 **Breve descripción:** El sistema muestra por pantalla todos los alumnos
 
 **Actores principales:** Usuario
+
 **Actores secundarios:** Alumnos
 
 **Precondiciones:**
@@ -129,9 +141,11 @@
 ## Editar alumnos
 
 **ID:** 051
+
 **Breve descripción:** Permite cambiar la información de los alumnos existentes.
 
 **Actores principales:** Usuario
+
 **Actores secundarios:** Alumno
 
 **Precondiciones:**
@@ -151,10 +165,12 @@
 ## Borrar alumnos
 
 **ID:** 052
+
 **Breve descripción:** Permite al usuario eliminar alumnos de la lista.
 
-**Actores principales:** Usuario.
-**Actores secundarios:** Alumno.
+**Actores principales:** Usuario
+
+**Actores secundarios:** Alumno
 
 **Precondiciones:**
 1. El alumno debe existir
