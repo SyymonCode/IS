@@ -3,3 +3,5 @@
 Guardar datos  
 **Manuel Casas**  
 Cargar datos  
+**Simón García**
+Crear el main
