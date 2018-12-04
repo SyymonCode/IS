@@ -27,7 +27,7 @@ void introducir()
 
         if(grupo--existe-en-fichero || grupo==0)
         {
-          guardar-grupo-en-fichero;
+          guardar-grupo-en-fichero; //Aunque se seleccione 0 como grupo, el grupo "0" significa no pertenecer a ningun grupo
           cout<<"Introduce 0 si no es lider o si no quieres indicar nada y 1 si es lider"
           cin>>lider;
 
