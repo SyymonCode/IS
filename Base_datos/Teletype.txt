@@ -1,2 +1,2 @@
 Aqui van los codigos del teletype
-atom://teletype/portal/143549c8-c984-45f3-bb61-5ceca45fec5e
+atom://teletype/portal/881331c4-2675-4a81-9130-630db1a995a1
