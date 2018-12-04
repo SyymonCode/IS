@@ -62,7 +62,6 @@ void introducir()
               cout<<"Introduce si es a tiempo parcial o no"<<endl;
               cin<<tiempo;
               guardar-tiempo;
-
           }
           else
           {
