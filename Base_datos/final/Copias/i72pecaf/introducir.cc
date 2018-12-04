@@ -29,9 +29,9 @@ void introducir()
         {
           guardar-grupo-en-fichero;
           cout<<"Introduce 0 si no es lider o si no quieres indicar nada y 1 si es lider"
-          cin>>
+          cin>>lider;
 
-          if (lider-no-existe-en-fichero) //Retocar esta parte
+          if (lider-no-existe-en-fichero || lider==0) //Retocar esta parte
           {
               guardar-lider;
 
