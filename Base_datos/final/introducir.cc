@@ -12,13 +12,16 @@ void introducir()
   int grupo,curso;
   string dni,email, nombre, apellido, telefono, direccion, fecha;
   bool lider,tiempo;  //Tiempo parcial o no
-
+  char cad [100];
+//Debajo se abre el fichero en modo salida para escribir los datos del alumno.
   ofstream fsalida("Agenda.dat",ios::out|ios::binary);
 
   cout<<"Introduce el DNI"<<endl;
-  a.setDNI(dni);
+  a.setDNI(dni);//Esta funcion es como un cin que escribe el valor que queremos, mientras que la de abajo lo guarda en la variable
   a.getDNI;
-  fsalida.write(dni, sizeof(string);
+  fsalida.write(dni, sizeof(string);//Aqui escribimos el valor de dni en el fichero
+
+//Todas las funciones de abajo son copias exactas de las superiores pero cambiando las variables
 
   cout<<"Introduce el nombre"<<endl;
   a.setNombre(nombre);
@@ -74,3 +77,14 @@ void introducir()
   a.setParcialidad(tiempo);
   a.getParcialidad;
   fsalida.write(tiempo, sizeof(int));
+
+  fsalida.close();
+
+  ifstream fentrada("Agenda.dat",ios::in|ios::binary);
+
+  do {
+      cout << cad << endl;
+      fentrada.read(cad, 100);
+   } while(!fentrada.eof());
+
+}
