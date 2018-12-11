@@ -1,90 +1,76 @@
 #include <stdio>
 #include <string>
 #include <stdlib>
+#include <fstream>
+#include "alumno.h"
 
 using namespace std;
 
 void introducir()
 {
+  Alumno A;
   int grupo,curso;
   string dni,email, nombre, apellido, telefono, direccion, fecha;
   bool lider,tiempo;  //Tiempo parcial o no
+
+  ofstream fsalida("Agenda.dat",ios::out|ios::binary);
+
   cout<<"Introduce el DNI"<<endl;
-  cin>>dni;
+  a.setDNI(dni);
+  a.getDNI;
+  fsalida.write(dni, sizeof(string);
 
+  cout<<"Introduce el nombre"<<endl;
+  a.setNombre(nombre);
+  a.getNombre;
+  fsalida.write(nombre, sizeof(string));
 
-  if(dni-no-existe-en-agenda)
-  {
-      guardar-dni-en-fichero;
-      cout<<"Introduce el email"<<endl;
-      cin>>email;
+  cout<<"Introduce el apellido"<<endl;
+  a.setApellido(apellido);
+  a.getApellido;
+  fsalida.write(apellido, sizeof(string));
 
-      if(email-no-existe-en-agenda)
-      {
-        guardar-email-en-fichero;
-        cout<<"Introduce el grupo, introduce 0 si no quieres ningun grupo"<<endl;
-        cin>>grupo;
+  cout<<"Introduce el email"<<endl;
+  a.setEmail(email);
+  a.getEmail;
+  fsalida.write(email, sizeof(string));
 
-        if(grupo--existe-en-fichero || grupo==0)
-        {
-          guardar-grupo-en-fichero; //Aunque se seleccione 0 como grupo, el grupo "0" significa no pertenecer a ningun grupo
-          cout<<"Introduce 0 si no es lider o si no quieres indicar nada y 1 si es lider"
-          cin>>lider;
+  cout<<"Introduce el telefono"<<endl;
+  a.setTelefono(telefono);
+  a.getTelefono;
+  fsalida.write(telefono, sizeof(string));
 
-          if (lider-no-existe-en-fichero || lider==0) //Retocar esta parte
-          {
-              guardar-lider;
+  cout<<"Introduce el email"<<endl;
+  a.setDireccion(direccion);
+  a.getDireccion;
+  fsalida.write(direccion, sizeof(string));
 
-              cout<<"Introduce el nombre"<<endl;
-              cin<<nombre;
-              guardar-nombre;
+  cout<<"Introduce la fecha de nacimiento"<<endl;
+  a.setNacimiento(fecha);
+  a.getNacimiento;
+  fsalida.write(fecha, sizeof(string));
 
-              cout<<"Introduce el apellido"<<endl;
-              cin<<apellido;
-              guardar-apellido;
+  cout<<"Introduce el apellido"<<endl;
+  a.setApellido(apellido);
+  a.getApellido;
+  fsalida.write(Apellido, sizeof(string));
 
-              cout<<"Introduce el telefono"<<endl;
-              cin<<telefono;
-              guardar-telefono;
+  cout<<"Introduce el curso mas alto"<<endl;
+  a.setCurso(curso);
+  a.getCurso;
+  fsalida.write(curso, sizeof(int));
 
-              cout<<"Introduce el direccion"<<endl;
-              cin<<direccion;
-              guardar-direccion;
+  cout<<"Introduce el grupo"<<endl;
+  a.setGrupo(grupo);
+  a.getGrupo;
+  fsalida.write(grupo, sizeof(int));
 
-              cout<<"Introduce el fecha de nacimiento"<<endl;
-              cin<<fecha;
-              guardar-fecha;
+  cout<<"Introduce si es lider"<<endl;
+  a.setLiderazgo(lider);
+  a.getLiderazgo;
+  fsalida.write(lider, sizeof(int));
 
-              cout<<"Introduce el curso mas alto matriculado"<<endl;
-              cin<<curso;
-              guardar-curso;
-
-              cout<<"Introduce si es a tiempo parcial o no"<<endl;
-              cin<<tiempo;
-              guardar-tiempo;
-          }
-          else
-          {
-            cout<<"Error, el lider ya existe"<<endl;
-            exit(EXIT_FAILURE);
-          }
-        }
-        else
-        {
-          cout<<"Error, el grupo no existe"<<endl;
-          exit(EXIT_FAILURE);
-        }
-      }
-      else
-      {
-        cout<<"Error, el mail ya existe"<<endl;
-        exit(EXIT_FAILURE);
-      }
-  }
-  else
-  {
-    cout<<"Error, ya existe el DNI"<<endl;
-    exit(EXIT_FAILURE);
-  }
-exit(0);
-}
+  cout<<"Introduce si es a tiempo parcial"<<endl;
+  a.setParcialidad(tiempo);
+  a.getParcialidad;
+  fsalida.write(tiempo, sizeof(int));
