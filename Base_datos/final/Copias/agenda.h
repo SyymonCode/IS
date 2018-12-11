@@ -5,6 +5,7 @@
 
 #include <string>
 #include <iostream>
+#include <list>
 #include "alumno.h"
 using namespace std;
 

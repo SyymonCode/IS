@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 #include "alumno.h"
-//#include "agenda.h"
+#include "agenda.h"
 using namespace std;
 
 int main(){
@@ -54,6 +54,6 @@ int main(){
       //guardar y cargar
       break;
       }
-      
+
     } while(menu!=8);
 }
