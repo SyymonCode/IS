@@ -6,8 +6,8 @@ Guardar datos
 Introducir alumnos  
 **Manuel Casas**  
 Cargar datos  
-Crear clase persona  
-Crear clase profesor  
+Creando la clase agenda
 **Simón García**  
 Crear el main  
 Crear clase alumno  
+Editar alumnos
