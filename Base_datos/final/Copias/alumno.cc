@@ -1,4 +1,4 @@
-//persona.cc
+//alumno.cc
 //métodos de la clase alumnos
 
 #include <string>
