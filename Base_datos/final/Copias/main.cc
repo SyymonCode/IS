@@ -10,8 +10,11 @@ int main(){
 
   int menu;
 
+  Alumno alum(DNI, nombre, apellidos, email, direccion, nacimiento, telefono, grupo, liderazgo, parcialidad, curso);
+  Agenda agen;
+
     do{
-      cout<<"Bienvenido/a"<<endl;
+      cout<<"Bienvenido/a."<<endl;
       cout<<"Introduzca una opción:"<<endl;
       cout<<"1: Introducir alumno."<<endl;
       cout<<"2: Mostrar alumno."<<endl;
@@ -27,7 +30,13 @@ int main(){
       switch(menu){
 
       case 1:
-      //introducir
+        //variables auxiliares
+        string DNIa="", nombrea="", apellidosa="", emaila="", direcciona="", nacimientoa="";
+        int telefonoa=0, grupoa=0, liderazgoa=0, parcialidada=0, cursoa=0;
+
+        cout<<"Introduze DNI"<<endl;
+        cin>>DNIa;
+
       break;
 
       case 2:
