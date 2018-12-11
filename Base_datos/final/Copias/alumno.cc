@@ -3,10 +3,10 @@
 
 #include <string>
 #include <iostream>
-#include "persona.h"
+#include "alumno.h"
 using namespace std;
 
-Persona::Persona(string DNI, string nombre, string apellidos, string email, string direccion, string nacimiento, int telefono){
+Persona::Persona(string DNI, string nombre, string apellidos, string email, string direccion, string nacimiento, int telefono, int grupo, int liderazgo,int parcialidad, int curso){
   DNI_=DNI;
   nombre_=nombre;
   apellidos_=apellidos;
@@ -14,4 +14,8 @@ Persona::Persona(string DNI, string nombre, string apellidos, string email, stri
   direccion_=direccion;
   nacimiento_=nacimiento;
   telefono_=telefono;
+  grupo_=grupo;
+  liderazgo_=liderazgo;
+  parcialidad_=parcialidad;
+  curso_=curso;
 }

@@ -1,7 +1,7 @@
 //alumno.h
 
-#ifndef PERSONA_H
-#define PERSONA_H
+#ifndef ALUMNO_H
+#define ALUMNO_H
 
 #include <string>
 #include <iostream>
@@ -12,11 +12,11 @@ class Persona{
 private:
 
   string DNI_,nombre_,apellidos_,email_,direccion_,nacimiento_;
-  int telefono_,grupo_,liderazgo_,parcialidad_;
+  int telefono_,grupo_,liderazgo_,parcialidad_,curso_;
 
 public:
 
-  Persona(string DNI, string nombre,string apellidos,string email,string direccion,string nacimiento,int telefono);
+  Persona(string DNI, string nombre,string apellidos,string email,string direccion,string nacimiento,int telefono,int grupo, int liderazgo,int parcialidad,int curso);
 
   //set y get DNI
   inline string getDNI()const{return DNI_;};
@@ -28,7 +28,7 @@ public:
 
   //set y get apellidos
   inline string getApellidos()const{return apellidos_;};
-  inline void setApellido(string apellido){apellido_=nombre;};
+  inline void setApellido(string apellidos){apellidos_=apellidos;};
 
   //set y get email
   inline string getEmail()const{return apellidos_;};
@@ -45,6 +45,22 @@ public:
   //set y get telefono
   inline int getTelefono()const{return telefono_;};
   inline void setTelefono(int telefono){telefono_=telefono;};
-}
+
+  //set y get grupo
+  inline int getGrupo()const{return grupo_;};
+  inline void setGrupo(int grupo){grupo_=grupo;};
+
+  //set y get liderazgo
+  inline int getLiderazgo()const{return liderazgo_;};
+  inline void setLiderazgo(int liderazgo){liderazgo_=liderazgo;};
+
+  //set y get parcialidad
+  inline int getParcialidad()const{return parcialidad_;};
+  inline void setParcialidad(int parcialidad){parcialidad_=parcialidad;};
+
+  //set y get curso
+  inline int getCurso()const{return curso_;};
+  inline void setCurso(int curso){curso_=curso;};
+};
 
 #endif
