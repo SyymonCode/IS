@@ -15,7 +15,10 @@ private:
   list <class Alumno> datos_;
 
 public:
-  void introducirAlumno();
+
+  Agenda();
+
+  void introducirAlumno(Alumno alumno);
   void mostrarAlumno();
   void mostrarListado();
   void modificarAlumno();
