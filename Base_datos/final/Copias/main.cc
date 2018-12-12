@@ -36,6 +36,8 @@ int main(){
 
         cout<<"Introduze DNI"<<endl;
         cin>>DNIa;
+        if
+
 
       break;
 
