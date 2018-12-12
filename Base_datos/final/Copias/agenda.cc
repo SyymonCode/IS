@@ -4,11 +4,12 @@
 #include <iostream>
 #include <list>
 #include <cstdlib>
+#include "agenda.h"
 using namespace std;
 
-//Agenda::Agenda(){}
+Agenda::Agenda(){}
 
-void introducirAlumno(Alumno alumno){
+void Agenda::introducirAlumno(Alumno alumno){
   list <Alumno>::iterator i;
   for(i=datos_.begin();i!=datos_.end();i++){
     if(alumno.getDNI()==i->getDNI()){
