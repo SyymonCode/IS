@@ -40,8 +40,8 @@ int main(){
       case 1:
 
         cout<<"Introduzca DNI"<<endl; //set dni
+        getchar();
         getline(cin, dnia); //este getline introduce "" al dni por lo que se utiliza un segundo getline
-        getline(cin, dnia);
         if(dnia.empty()){
           cout<<"Error, campo obligatorio."<<endl;
           break;
@@ -125,7 +125,7 @@ int main(){
           alum.setParcialidad(parcialidada);
         }
 
-        cout<<"Intruzca curso."<<endl; //set curso
+        cout<<"Introduzca curso."<<endl; //set curso
         cin>>cursoa;
         if (cursoa==0){
           cout<<"Error, campo obligatorio."<<endl;
@@ -134,7 +134,7 @@ int main(){
           alum.setCurso(cursoa);
         }
 
-        introducirAlumno(alum);
+        agen.introducirAlumno(alum);
 
       break;
 
@@ -155,7 +155,11 @@ int main(){
       break;
 
       case 6:
-      //buscar
+
+      cout<<"Introduzca el DNI del alumno a buscar."<<endl;
+      getchar();
+      getline (cin, dnia);
+
       break;
 
       case 7:
@@ -164,4 +168,6 @@ int main(){
       }
 
     } while(menu!=8);
+
+    return 0;
 }
