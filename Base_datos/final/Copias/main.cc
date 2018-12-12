@@ -9,7 +9,7 @@ using namespace std;
 int main(){
 
   string DNI,nombre,apellidos,email,direccion,nacimiento;
-  int telefono,grupo,liderazgo,parcialidad,curso,menu;
+  int telefono,grupo,liderazgo,parcialidad,curso,menu,menuMostrar;
 
   Alumno alum(DNI, nombre, apellidos, email, direccion, nacimiento, telefono, grupo, liderazgo, parcialidad, curso);
   Agenda agen;
@@ -115,6 +115,7 @@ int main(){
           break;
         }else{
         alum.setLiderazgo(liderazgoa);
+
       }
         cout<<"Introduzca la parcialidad. 0=Completo 1=Parcial"<<endl; //set parcialidada
         cin>>parcialidada;
@@ -133,13 +134,17 @@ int main(){
         }else{
           alum.setCurso(cursoa);
         }
-
         agen.introducirAlumno(alum);
 
       break;
 
       case 2:
-      //mostrar alumno
+      cout<<"Introduzca DNI"<<endl; //set dni
+      getchar();
+      getline(cin, dnia);
+      alum.setDNI(dnia);
+        agen.mostrarAlumno(alum);
+
       break;
 
       case 3:
@@ -159,6 +164,8 @@ int main(){
       cout<<"Introduzca el DNI del alumno a buscar."<<endl;
       getchar();
       getline (cin, dnia);
+      alum.setDNI(dnia);
+      agen.buscarAlumno(alum);
 
       break;
 
