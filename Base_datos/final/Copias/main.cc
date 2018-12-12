@@ -8,12 +8,20 @@ using namespace std;
 
 int main(){
 
-  int menu;
+  string DNI,nombre,apellidos,email,direccion,nacimiento;
+  int telefono,grupo,liderazgo,parcialidad,curso,menu;
 
   Alumno alum(DNI, nombre, apellidos, email, direccion, nacimiento, telefono, grupo, liderazgo, parcialidad, curso);
   Agenda agen;
 
     do{
+
+      //variables auxiliares
+      string dnia="hola", nombrea="", apellidosa="", emaila="", direcciona="", nacimientoa="";
+      int telefonoa=0, grupoa=0, liderazgoa=0, parcialidada=2, cursoa=0;
+
+      //opciones del menu
+
       cout<<"Bienvenido/a."<<endl;
       cout<<"Introduzca una opción:"<<endl;
       cout<<"1: Introducir alumno."<<endl;
@@ -30,17 +38,16 @@ int main(){
       switch(menu){
 
       case 1:
-        //variables auxiliares
-        string DNIa="", nombrea="", apellidosa="", emaila="", direcciona="", nacimientoa="";
-        int telefonoa=0, grupoa=0, liderazgoa=0, parcialidada=2, cursoa=0;
 
-        cout<<"Introduzca DNI."<<endl; //set DNI
-        getline(cin, DNIa);
-        if (DNIa.empty()){
+        cout<<"Introduzca DNI"<<endl;
+        cout<<dnia<<endl;
+        getline(cin, dnia);
+        cout<<dnia<<endl;
+        if(dnia.empty()){
           cout<<"Error, campo obligatorio."<<endl;
-          break;
+          //break;
         }else{
-          alum.setDNI(DNIa);
+          alum.setDNI(dnia);
         }
 
         cout<<"Introduzca nombre."<<endl; //set nombre
@@ -92,16 +99,17 @@ int main(){
         cin>>telefonoa;
         if (telefonoa==0){
           cout<<"Error, campo obligatorio."<<endl;
+          break;
         }else{
           alum.setTelefono(telefonoa);
         }
 
-        cout<<"Introduzca grupo."<<endl; //set grupo
+        cout<<"Introduzca grupo. Introducir 0 significa alumno sin grupo."<<endl; //set grupo
         cin>>grupoa;
         alum.setGrupo(grupoa);
 
 
-        cout<<"Introduzca el liderazgo."<<endl; //set liderazgo
+        cout<<"Introduzca el liderazgo. 0=no es lider 1=es lider"<<endl; //set liderazgo
         cin>>liderazgoa;
         alum.setLiderazgo(liderazgoa);
 
@@ -109,8 +117,9 @@ int main(){
         cin>>parcialidada;
         if((parcialidada!=0) && (parcialidada!=1)){
           cout<<"Error, ese valor no existe."<<endl;
+          break;
         }else{
-          alum.setParcialidad(parcialidada)
+          alum.setParcialidad(parcialidada);
         }
 
         cout<<"Intruzca curso."<<endl; //set curso
