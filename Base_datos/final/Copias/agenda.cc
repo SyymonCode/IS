@@ -20,4 +20,14 @@ void Agenda::introducirAlumno(Alumno alumno){
   datos_.push_back(alumno);
 }
 
+void Agenda::introducirAlumno(Alumno alumno){
+  list <Alumno>::iterator i;
+  for(i=datos_.begin();i!=datos_.end();i++){
+    if(alumno.getDNI()==i->getDNI()){
+      cout<<"El alumno existe."<<endl;
+      break;
+    }
+  }
+  datos_.push_back(alumno);
+}
 //void Agenda::

@@ -1,4 +1,4 @@
-//alumno.h
+  //alumno.h
 
 #ifndef ALUMNO_H
 #define ALUMNO_H
