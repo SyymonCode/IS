@@ -32,12 +32,95 @@ int main(){
       case 1:
         //variables auxiliares
         string DNIa="", nombrea="", apellidosa="", emaila="", direcciona="", nacimientoa="";
-        int telefonoa=0, grupoa=0, liderazgoa=0, parcialidada=0, cursoa=0;
+        int telefonoa=0, grupoa=0, liderazgoa=0, parcialidada=2, cursoa=0;
 
-        cout<<"Introduze DNI"<<endl;
-        cin>>DNIa;
-        if
+        cout<<"Introduzca DNI."<<endl; //set DNI
+        getline(cin, DNIa);
+        if (DNIa.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setDNI(DNIa);
+        }
 
+        cout<<"Introduzca nombre."<<endl; //set nombre
+        getline(cin, nombrea);
+        if (nombrea.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setNombre(nombrea);
+        }
+
+        cout<<"Introduzca apellidos. Nota: separe los apellidos mediante una barra baja -> _."<<endl; //set apellidos
+        getline(cin, apellidosa);
+        if (apellidosa.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setApellidos(apellidosa);
+        }
+
+        cout<<"Introduzca email."<<endl; // set email
+        getline(cin, emaila);
+        if (emaila.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setEmail(emaila);
+        }
+
+        cout<<"Introduzca direccion."<<endl; // set direccion
+        getline(cin, direcciona);
+        if (direcciona.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setDireccion(direcciona);
+        }
+
+        cout<<"Introduzca fecha de nacimiento."<<endl; //set nacimiento
+        getline(cin, nacimientoa);
+        if (nacimientoa.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setNacimiento(nacimientoa);
+        }
+
+        cout<<"Introduzca telefono."<<endl; //set telefono
+        cin>>telefonoa;
+        if (telefonoa==0){
+          cout<<"Error, campo obligatorio."<<endl;
+        }else{
+          alum.setTelefono(telefonoa);
+        }
+
+        cout<<"Introduzca grupo."<<endl; //set grupo
+        cin>>grupoa;
+        alum.setGrupo(grupoa);
+
+
+        cout<<"Introduzca el liderazgo."<<endl; //set liderazgo
+        cin>>liderazgoa;
+        alum.setLiderazgo(liderazgoa);
+
+        cout<<"Introduzca la parcialidad. 0=Completo 1=Parcial"<<endl; //set parcialidada
+        cin>>parcialidada;
+        if((parcialidada!=0) && (parcialidada!=1)){
+          cout<<"Error, ese valor no existe."<<endl;
+        }else{
+          alum.setParcialidad(parcialidada)
+        }
+
+        cout<<"Intruzca curso."<<endl; //set curso
+        cin>>cursoa;
+        if (cursoa==0){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setCurso(cursoa);
+        }
 
       break;
 

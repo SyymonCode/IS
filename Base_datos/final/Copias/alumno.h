@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-class Persona{
+class Alumno{
 
 private:
 
@@ -16,7 +16,7 @@ private:
 
 public:
 
-  Persona(string DNI, string nombre,string apellidos,string email,string direccion,string nacimiento,int telefono,int grupo, int liderazgo,int parcialidad,int curso);
+  Alumno(string DNI, string nombre,string apellidos,string email,string direccion,string nacimiento,int telefono,int grupo, int liderazgo,int parcialidad,int curso);
 
   //set y get DNI
   inline string getDNI()const{return DNI_;};
@@ -28,7 +28,7 @@ public:
 
   //set y get apellidos
   inline string getApellidos()const{return apellidos_;};
-  inline void setApellido(string apellidos){apellidos_=apellidos;};
+  inline void setApellidos(string apellidos){apellidos_=apellidos;};
 
   //set y get email
   inline string getEmail()const{return apellidos_;};

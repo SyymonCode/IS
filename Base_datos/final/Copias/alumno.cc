@@ -6,7 +6,7 @@
 #include "alumno.h"
 using namespace std;
 
-Persona::Persona(string DNI, string nombre, string apellidos, string email, string direccion, string nacimiento, int telefono, int grupo, int liderazgo,int parcialidad, int curso){
+Alumno::Alumno(string DNI, string nombre, string apellidos, string email, string direccion, string nacimiento, int telefono, int grupo, int liderazgo,int parcialidad, int curso){
   DNI_=DNI;
   nombre_=nombre;
   apellidos_=apellidos;
