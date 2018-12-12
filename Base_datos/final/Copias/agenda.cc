@@ -6,6 +6,8 @@
 #include <cstdlib>
 using namespace std;
 
+//Agenda::Agenda(){}
+
 void introducirAlumno(Alumno alumno){
   list <Alumno>::iterator i;
   for(i=datos_.begin();i!=datos_.end();i++){

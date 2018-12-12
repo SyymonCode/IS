@@ -17,11 +17,11 @@ int main(){
     do{
 
       //variables auxiliares
-      string dnia="hola", nombrea="", apellidosa="", emaila="", direcciona="", nacimientoa="";
+      string dnia="", nombrea="", apellidosa="", emaila="", direcciona="", nacimientoa="";
       int telefonoa=0, grupoa=0, liderazgoa=0, parcialidada=2, cursoa=0;
 
       //opciones del menu
-
+      cout<<endl;
       cout<<"Bienvenido/a."<<endl;
       cout<<"Introduzca una opción:"<<endl;
       cout<<"1: Introducir alumno."<<endl;
@@ -39,13 +39,12 @@ int main(){
 
       case 1:
 
-        cout<<"Introduzca DNI"<<endl;
-        cout<<dnia<<endl;
+        cout<<"Introduzca DNI"<<endl; //set dni
+        getline(cin, dnia); //este getline introduce "" al dni por lo que se utiliza un segundo getline
         getline(cin, dnia);
-        cout<<dnia<<endl;
         if(dnia.empty()){
           cout<<"Error, campo obligatorio."<<endl;
-          //break;
+          break;
         }else{
           alum.setDNI(dnia);
         }
@@ -111,8 +110,12 @@ int main(){
 
         cout<<"Introduzca el liderazgo. 0=no es lider 1=es lider"<<endl; //set liderazgo
         cin>>liderazgoa;
+        if((liderazgoa!=0) && (liderazgoa!=1)){
+          cout<<"Error, ese valor no existe."<<endl;
+          break;
+        }else{
         alum.setLiderazgo(liderazgoa);
-
+      }
         cout<<"Introduzca la parcialidad. 0=Completo 1=Parcial"<<endl; //set parcialidada
         cin>>parcialidada;
         if((parcialidada!=0) && (parcialidada!=1)){
@@ -130,6 +133,8 @@ int main(){
         }else{
           alum.setCurso(cursoa);
         }
+
+        introducirAlumno(alum);
 
       break;
 
