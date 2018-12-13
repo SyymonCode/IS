@@ -139,11 +139,23 @@ int main(){
       break;
 
       case 2:
-      cout<<"Introduzca DNI"<<endl; //set dni
+      
+      cout<<"Introduzca DNI para mostrar alumno."<<endl; //set dni
       getchar();
       getline(cin, dnia);
-      alum.setDNI(dnia);
-        agen.mostrarAlumno(alum);
+      alum=agen.buscarDNI(dnia);
+      cout<<endl;
+      cout<<"DNI: "<<alum.getDNI()<<endl;
+      cout<<"Nombre: "<<alum.getNombre()<<endl;
+      cout<<"Apellidos: "<<alum.getApellidos()<<endl;
+      cout<<"Correo: "<<alum.getEmail()<<endl;
+      cout<<"Dirección: "<<alum.getDireccion()<<endl;
+      cout<<"Nacimiento: "<<alum.getNacimiento()<<endl;
+      cout<<"Teléfono: "<<alum.getTelefono()<<endl;
+      cout<<"Grupo (0=no grupo): "<<alum.getGrupo()<<endl;
+      cout<<"Liderazgo (1=lider 0=no lider): "<<alum.getLiderazgo()<<endl;
+      cout<<"Parcialidad (0=Completo 1=Parcial): "<<alum.getParcialidad()<<endl;
+      cout<<"Curso: "<<alum.getCurso()<<endl;
 
       break;
 
@@ -164,8 +176,7 @@ int main(){
       cout<<"Introduzca el DNI del alumno a buscar."<<endl;
       getchar();
       getline (cin, dnia);
-      alum.setDNI(dnia);
-      agen.buscarAlumno(alum);
+      agen.encontrarAlumno(dnia);
 
       break;
 

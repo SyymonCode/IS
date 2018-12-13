@@ -20,8 +20,35 @@ void Agenda::introducirAlumno(Alumno alumno){
   datos_.push_back(alumno);
 }
 
+Alumno Agenda::buscarDNI(string dnia){
+  list <Alumno>::iterator i;
+  for(i=datos_.begin();i!=datos_.end();i++){
+    if(dnia==i->getDNI()){
+      return *i;
+    }
+  }
+}
 
-void Agenda::mostrarAlumno(Alumno alumno){
+void Agenda::encontrarAlumno(string dnia){
+  list <Alumno>::iterator i;
+  for(i=datos_.begin();i!=datos_.end();i++){
+    if(dnia==i->getDNI()){
+      cout<< "Alumno encontrado"<<endl;
+    }else{
+      cout<<"Alumno no encontrado"<<endl;
+    }
+    break;
+  }
+}
+
+
+
+
+
+
+
+
+/*void Agenda::mostrarAlumno(Alumno alumno){
   list <Alumno>::iterator i;
   for(i=datos_.begin();i!=datos_.end();i++){
     if(alumno.getDNI()==i->getDNI()){
@@ -32,23 +59,8 @@ void Agenda::mostrarAlumno(Alumno alumno){
     }
     break;
   }
-}
+}*/
 
-void Agenda::mostrarListado(Alumno alumno){
+/*void Agenda::mostrarListado(Alumno alumno){
   list <Alumno>::iterator i;
-}
-
-void Agenda::buscarAlumno(Alumno alumno){
-  list <Alumno>::iterator i;
-  for(i=datos_.begin();i!=datos_.end();i++){
-    if(alumno.getDNI()==i->getDNI()){
-      cout<< "Alumno encontrado"<<endl;
-    }else{
-      cout<<"Alumno no encontrado"<<endl;
-    }
-    break;
-  }
-}
-
-
-//void Agenda::
+}*/
