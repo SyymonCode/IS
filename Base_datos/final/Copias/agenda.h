@@ -19,12 +19,11 @@ public:
   Agenda();
 
   void introducirAlumno(Alumno alumno);
-  Alumno buscarDNI(string dnia);
-  void mostrarAlumno(Alumno alumno);
-  void mostrarListado(Alumno alumno);
+  Alumno mostrarAlumnodni(string dnia);
+  int mostrarListado();
   void modificarAlumno();
-  void borrarAlumno();
-  void encontrarAlumno(string dnia);
+  int borrarAlumno(string dnia);
+  int encontrarAlumno(string dnia);
 };
 
 #endif

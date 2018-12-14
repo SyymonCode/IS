@@ -31,7 +31,7 @@ public:
   inline void setApellidos(string apellidos){apellidos_=apellidos;};
 
   //set y get email
-  inline string getEmail()const{return apellidos_;};
+  inline string getEmail()const{return email_;};
   inline void setEmail(string email){email_=email;};
 
   //set y get direccion
