@@ -29,6 +29,46 @@ Alumno Agenda::mostrarAlumnodni(string dnia){
     }
   }} //2.1
 
+void Agenda::mostrarAlumnoapellidos(string apellidosa){
+  list <Alumno>::iterator i;
+  for(i=datos_.begin();i!=datos_.end();i++){
+    if(apellidosa==i->getApellidos()){
+      cout<<endl;
+      cout<<"DNI: "<<i->getDNI()<<endl;
+      cout<<"Nombre: "<<i->getNombre()<<endl;
+      cout<<"Apellidos: "<<i->getApellidos()<<endl;
+      cout<<"Correo: "<<i->getEmail()<<endl;
+      cout<<"Dirección: "<<i->getDireccion()<<endl;
+      cout<<"Nacimiento: "<<i->getNacimiento()<<endl;
+      cout<<"Teléfono: "<<i->getTelefono()<<endl;
+      cout<<"Grupo (0=no grupo): "<<i->getGrupo()<<endl;
+      cout<<"Liderazgo (1=lider 0=no lider): "<<i->getLiderazgo()<<endl;
+      cout<<"Parcialidad (0=Completo 1=Parcial): "<<i->getParcialidad()<<endl;
+      cout<<"Curso: "<<i->getCurso()<<endl;
+    }
+  }
+} //2.2
+
+void Agenda::mostrarAlumnogrupo(int grupoa){
+  list <Alumno>::iterator i;
+  for(i=datos_.begin();i!=datos_.end();i++){
+    if(grupoa==i->getGrupo()){
+      cout<<endl;
+      cout<<"DNI: "<<i->getDNI()<<endl;
+      cout<<"Nombre: "<<i->getNombre()<<endl;
+      cout<<"Apellidos: "<<i->getApellidos()<<endl;
+      cout<<"Correo: "<<i->getEmail()<<endl;
+      cout<<"Dirección: "<<i->getDireccion()<<endl;
+      cout<<"Nacimiento: "<<i->getNacimiento()<<endl;
+      cout<<"Teléfono: "<<i->getTelefono()<<endl;
+      cout<<"Grupo (0=no grupo): "<<i->getGrupo()<<endl;
+      cout<<"Liderazgo (1=lider 0=no lider): "<<i->getLiderazgo()<<endl;
+      cout<<"Parcialidad (0=Completo 1=Parcial): "<<i->getParcialidad()<<endl;
+      cout<<"Curso: "<<i->getCurso()<<endl;
+    }
+  }
+} //2.3
+
 int Agenda::mostrarListado(){
 
   list <Alumno>::iterator i;

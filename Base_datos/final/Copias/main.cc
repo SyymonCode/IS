@@ -176,11 +176,21 @@ int main(){
         break;
 
         case 2:
-        //por apellidos
+
+        getchar();
+        cout<<"Introduzca los apellidos separados por -> _. "<<endl;
+        getline(cin,apellidosa);
+        agen.mostrarAlumnoapellidos(apellidosa);
+
         break;
 
         case 3:
-        //por grupo
+
+        getchar();
+        cout<<"Introduzca el grupo que desea buscar."<<endl;
+        cin>>grupoa;
+        agen.mostrarAlumnogrupo(grupoa);
+
         break;
 
       }
