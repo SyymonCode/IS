@@ -71,7 +71,17 @@ int Agenda::mostrarListado(){
     return 1;
   }} //3
 
-//int Agenda::modificarAlumno(string dnia){} //4
+void Agenda::modificarAlumno(Alumno alumno, string dnia){
+  list <Alumno>::iterator i;
+  for(i=datos_.begin(); i!=datos_.end();i++){
+    if(dnia==i->getDNI()){
+      datos_.push_back(alumno);
+      datos_.erase(i);
+      cout<<"Alumno modificado."<<endl;
+      break;
+    }
+  }
+} //4
 
 int Agenda::borrarAlumno(string dnia){
   list <Alumno>::iterator i;
@@ -82,18 +92,16 @@ int Agenda::borrarAlumno(string dnia){
     }
   }
   return 2;
-}
+}//5
 
 int Agenda::encontrarAlumno(string dnia){
   list <Alumno>::iterator i;
   for(i=datos_.begin();i!=datos_.end();i++){
     if(dnia==i->getDNI()){
       return 1;
-    }else{
-      return 0;
     }
-    break;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -101,5 +109,8 @@ int Agenda::encontrarAlumno(string dnia){
 >>>>>>> b24155a8e1b6b805cdbe77e066ab474948cc896f
 //void Agenda::
 =======
+=======
+  return 0;
+>>>>>>> e4992339e40447aa41a85c236d7fd4480de1ee44
 } //6
 >>>>>>> c87a31d5f9832406b2c00dea3eea852fdc0ad0de
