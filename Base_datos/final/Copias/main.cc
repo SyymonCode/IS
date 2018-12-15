@@ -6,10 +6,13 @@
 #include "agenda.h"
 using namespace std;
 
+
+
 int main(){
 
   string DNI,nombre,apellidos,email,direccion,nacimiento;
-  int telefono,grupo,liderazgo,parcialidad,curso,menu,menuMostrar;
+  int telefono,grupo,liderazgo,parcialidad,curso;
+  int menu,menuMostrar,auxencontrar;
 
   Alumno alum(DNI, nombre, apellidos, email, direccion, nacimiento, telefono, grupo, liderazgo, parcialidad, curso);
   Agenda agen;
@@ -139,16 +142,57 @@ int main(){
       break;
 
       case 2:
-      cout<<"Introduzca DNI"<<endl; //set dni
-      getchar();
-      getline(cin, dnia);
-      alum.setDNI(dnia);
-        agen.mostrarAlumno(alum);
 
+      cout<<"1:Mostrar por DNI 2:Mostrar por Apellidos 3:Mostrar por grupo"<<endl;
+      getchar();
+      cin>>menuMostrar;
+      switch (menuMostrar){
+
+        case 1:
+
+        cout<<"Introduzca DNI para mostrar alumno."<<endl; //set dni
+        getchar();
+        getline(cin, dnia);
+        auxencontrar=agen.encontrarAlumno(dnia);
+        if (auxencontrar==1){
+          alum=agen.mostrarAlumnodni(dnia);
+          cout<<endl;
+          cout<<"DNI: "<<alum.getDNI()<<endl;
+          cout<<"Nombre: "<<alum.getNombre()<<endl;
+          cout<<"Apellidos: "<<alum.getApellidos()<<endl;
+          cout<<"Correo: "<<alum.getEmail()<<endl;
+          cout<<"Dirección: "<<alum.getDireccion()<<endl;
+          cout<<"Nacimiento: "<<alum.getNacimiento()<<endl;
+          cout<<"Teléfono: "<<alum.getTelefono()<<endl;
+          cout<<"Grupo (0=no grupo): "<<alum.getGrupo()<<endl;
+          cout<<"Liderazgo (1=lider 0=no lider): "<<alum.getLiderazgo()<<endl;
+          cout<<"Parcialidad (0=Completo 1=Parcial): "<<alum.getParcialidad()<<endl;
+          cout<<"Curso: "<<alum.getCurso()<<endl;
+        }else{
+          cout<<"Alumno no encontrado."<<endl;
+        }
+
+        break;
+
+        case 2:
+        //por apellidos
+        break;
+
+        case 3:
+        //por grupo
+        break;
+
+      }
       break;
 
       case 3:
-      //mostrar listado
+
+      if(agen.mostrarListado()==1){
+        cout<<"Listado.md creado en el directorio."<<endl;
+      }else{
+        cout<<"No hay alumnos para crear listado."<<endl;
+      }
+
       break;
 
       case 4:
@@ -156,7 +200,18 @@ int main(){
       break;
 
       case 5:
-      //borrar
+
+      getchar();
+      cout<<"Introduzca DNI del alumno que desea eliminar."<<endl;
+      getline(cin,dnia);
+      auxencontrar=agen.borrarAlumno(dnia);
+      if(auxencontrar==1){
+        cout<<"Alumno encontrado y eliminado."<<endl;
+      }
+      if(auxencontrar==2){
+        cout<<"Alumno no encontrado."<<endl;
+      }
+
       break;
 
       case 6:
@@ -164,8 +219,12 @@ int main(){
       cout<<"Introduzca el DNI del alumno a buscar."<<endl;
       getchar();
       getline (cin, dnia);
-      alum.setDNI(dnia);
-      agen.buscarAlumno(alum);
+      auxencontrar=agen.encontrarAlumno(dnia);
+      if (auxencontrar==1){
+        cout<<"Alumno encontrado."<<endl;
+      }else{
+        cout<<"Alumno no encontrado."<<endl;
+      }
 
       break;
 
