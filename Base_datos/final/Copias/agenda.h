@@ -21,7 +21,7 @@ public:
   void introducirAlumno(Alumno alumno);
   Alumno mostrarAlumnodni(string dnia);
   int mostrarListado();
-  void modificarAlumno();
+  void modificarAlumno(Alumno alumno, string dnia);
   int borrarAlumno(string dnia);
   int encontrarAlumno(string dnia);
 };
