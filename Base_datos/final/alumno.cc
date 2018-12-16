@@ -6,6 +6,8 @@
 #include "alumno.h"
 using namespace std;
 
+//constructor de la clase alumno
+
 Alumno::Alumno(string DNI, string nombre, string apellidos, string email, string direccion, string nacimiento, int telefono, int grupo, int liderazgo,int parcialidad, int curso){
   DNI_=DNI;
   nombre_=nombre;

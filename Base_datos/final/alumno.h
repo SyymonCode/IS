@@ -11,10 +11,14 @@ class Alumno{
 
 private:
 
+  //variables de a clase alumno
+
   string DNI_,nombre_,apellidos_,email_,direccion_,nacimiento_;
   int telefono_,grupo_,liderazgo_,parcialidad_,curso_;
 
 public:
+
+  //Constructor de la clase alumno y funciones inline de la misma
 
   Alumno(string DNI, string nombre,string apellidos,string email,string direccion,string nacimiento,int telefono,int grupo, int liderazgo,int parcialidad,int curso);
 

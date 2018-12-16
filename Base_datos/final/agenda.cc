@@ -20,7 +20,7 @@ void Agenda::introducirAlumno(Alumno alumno){
     }
   }
   datos_.push_back(alumno);
-} //1
+} //1 Introducir
 
 Alumno Agenda::mostrarAlumnodni(string dnia){
   list <Alumno>::iterator i;
@@ -28,7 +28,7 @@ Alumno Agenda::mostrarAlumnodni(string dnia){
     if(dnia==i->getDNI()){
       return *i;
     }
-  }} //2.1
+  }} //2.1 Mostrar alumno dni
 
 void Agenda::mostrarAlumnoapellidos(string apellidosa){
   list <Alumno>::iterator i;
@@ -48,7 +48,7 @@ void Agenda::mostrarAlumnoapellidos(string apellidosa){
       cout<<"Curso: "<<i->getCurso()<<endl;
     }
   }
-} //2.2
+} //2.2 Mostrar alumno apellido
 
 void Agenda::mostrarAlumnogrupo(int grupoa){
   list <Alumno>::iterator i;
@@ -68,7 +68,7 @@ void Agenda::mostrarAlumnogrupo(int grupoa){
       cout<<"Curso: "<<i->getCurso()<<endl;
     }
   }
-} //2.3
+} //2.3 mostrar alumno grupo
 
 int Agenda::mostrarListado(){
 
@@ -93,7 +93,7 @@ int Agenda::mostrarListado(){
     }
     ficherosalida.close();
     return 1;
-  }} //3
+  }} //3 crear fichero.md para listar alumnos
 
 void Agenda::modificarAlumno(Alumno alumno, string dnia){
   list <Alumno>::iterator i;
@@ -105,7 +105,7 @@ void Agenda::modificarAlumno(Alumno alumno, string dnia){
       break;
     }
   }
-} //4
+} //4 modificar alumno
 
 int Agenda::borrarAlumno(string dnia){
   list <Alumno>::iterator i;
@@ -116,7 +116,7 @@ int Agenda::borrarAlumno(string dnia){
     }
   }
   return 2;
-}//5
+}//5 borrar alumno
 
 int Agenda::encontrarAlumno(string dnia){
   list <Alumno>::iterator i;
@@ -126,4 +126,4 @@ int Agenda::encontrarAlumno(string dnia){
     }
   }
   return 0;
-} //6
+} //6 comprobar existencia de un alumno

@@ -12,9 +12,11 @@ using namespace std;
 class Agenda{
 
 private:
-  list <class Alumno> datos_;
+  list <class Alumno> datos_; //lista para los datos de alumnos
 
 public:
+
+  //Funciones de agenda.cc
 
   Agenda();
 

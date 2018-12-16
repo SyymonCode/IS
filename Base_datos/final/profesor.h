@@ -10,10 +10,12 @@ using namespace std;
 class Profesor{
 
 private:
-
+  //variables de la clase profesor
   string user_,pass_;
 
 public:
+
+  //clase profesor y funciones inline
 
   Profesor(string usuario, string pass);
 
