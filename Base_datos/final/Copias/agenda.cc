@@ -92,7 +92,7 @@ int Agenda::mostrarListado(){
     }
     ficherosalida.close();
     return 1;
-  }} //3
+}} //3
 
 void Agenda::modificarAlumno(Alumno alumno, string dnia){
   list <Alumno>::iterator i;
@@ -126,3 +126,9 @@ int Agenda::encontrarAlumno(string dnia){
   }
   return 0;
 } //6
+
+//-------------------------------------
+
+int Agenda::registrarProfesor(Profesor profesor){
+  return 1;
+}

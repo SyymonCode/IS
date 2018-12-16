@@ -7,12 +7,14 @@
 #include <iostream>
 #include <list>
 #include "alumno.h"
+#include "profesor.h"
 using namespace std;
 
 class Agenda{
 
 private:
   list <class Alumno> datos_;
+  list <class Profesor> data_;
 
 public:
 
@@ -26,6 +28,8 @@ public:
   void modificarAlumno(Alumno alumno, string dnia); //4
   int borrarAlumno(string dnia); //5
   int encontrarAlumno(string dnia); //6
+  //-------------------------------
+  int registrarProfesor(Profesor profesor);
 };
 
 #endif

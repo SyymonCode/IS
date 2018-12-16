@@ -2,8 +2,10 @@
 
 #include <string>
 #include <iostream>
+#include <fstream>
 #include "alumno.h"
 #include "agenda.h"
+#include "profesor.h"
 using namespace std;
 
 
@@ -13,16 +15,20 @@ int main(){
   string DNI,nombre,apellidos,email,direccion,nacimiento;
   string auxdni;
   int telefono,grupo,liderazgo,parcialidad,curso;
-  int menu,menuMostrar,auxencontrar;
+  int menu,menuMostrar,auxencontrar,menuCoordinador;
+  string user,pass;
+
 
   Alumno alum(DNI, nombre, apellidos, email, direccion, nacimiento, telefono, grupo, liderazgo, parcialidad, curso);
   Agenda agen;
+  Profesor prof(user, pass);
 
     do{
 
       //variables auxiliares
       string dnia="", nombrea="", apellidosa="", emaila="", direcciona="", nacimientoa="";
       int telefonoa=0, grupoa=0, liderazgoa=0, parcialidada=2, cursoa=0;
+      string usera="", passa="";
 
       //opciones del menu
       cout<<endl;
@@ -303,7 +309,14 @@ int main(){
 
         cout<<"Introduzca curso."<<endl; //set curso
         cin>>cursoa;
-        if (cursoa==0){
+        if (cursoa==0){        cout<<"Introduzca DNI"<<endl; //set dni
+        getline(cin, dnia); //este getline introduce "" al dni por lo que se utiliza un segundo getline
+        if(dnia.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setDNI(dnia);
+        }
           cout<<"Error, campo obligatorio."<<endl;
           break;
         }else{
@@ -312,7 +325,14 @@ int main(){
         agen.modificarAlumno(alum, auxdni);
 
       }else{
-        cout<<"Alumno no encontrado."<<endl;
+        cout<<"Alumno no encontrado."<<endl;        cout<<"Introduzca DNI"<<endl; //set dni
+        getline(cin, dnia); //este getline introduce "" al dni por lo que se utiliza un segundo getline
+        if(dnia.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          alum.setDNI(dnia);
+        }
       }
 
       break;
@@ -347,8 +367,52 @@ int main(){
       break;
 
       case 7:
-      //guardar y cargar
+
+      getchar();
+      cout<<"Introduzca una opción del modo coordinador."<<endl;
+      cout<<"1: Registrarse como coordinador."<<endl;
+      cout<<"2: Logearse como coordinador."<<endl;
+      cin>>menuCoordinador;
+
+      switch (menuCoordinador){
+
+        case 1:
+
+        getchar();
+        cout<<"Introduzca user."<<endl; //set user
+        getline(cin, usera);
+        if(usera.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          prof.setUser(usera);
+        }
+
+        cout<<"Introduzca pass."<<endl; //set pass
+        getline(cin, passa);
+        if(passa.empty()){
+          cout<<"Error, campo obligatorio."<<endl;
+          break;
+        }else{
+          prof.setPass(passa);
+        }
+        auxencontrar=agen.registrarProfesor(prof);
+        if (auxencontrar==1){
+          cout<<"Registrado con exito."<<endl;
+        }else{
+          cout<<"Fallo al registrar."<<endl;
+        }
+
+        break;
+
+        case 2:
+        //login
+        break;
+
+      }
+
       break;
+
       }
 
     } while(menu!=8);
