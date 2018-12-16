@@ -5,10 +5,6 @@
 
 #include <string>
 #include <iostream>
-#include <fstream>
-#include <list>
-#include <cstdlib>
-
 using namespace std;
 
 class Profesor{
