@@ -1,13 +1,10 @@
 # Sprint Backlog  
-### Primera semana  
+### Segunda semana
 ---
 **Francisco Pérez**  
-Guardar datos  
-Introducir alumnos  
+Empezar con el trabajo final
 **Manuel Casas**  
-Cargar datos  
-Creando la clase agenda
+Continuar con el desarrollo del codigo
 **Simón García**  
-Crear el main  
-Crear clase alumno  
-Editar alumnos
+Continuar con el desarrollo del codigo
+Actualizar el sprint backlog, el burndown chart y el product backlog
