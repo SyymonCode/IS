@@ -10,6 +10,8 @@ using namespace std;
 
 int main(){
 
+  //variables utilizadas en la ejecución del programa
+
   string DNI,nombre,apellidos,email,direccion,nacimiento;
   string auxdni;
   int telefono,grupo,liderazgo,parcialidad,curso;
@@ -138,7 +140,7 @@ int main(){
         }else{
           alum.setCurso(cursoa);
         }
-        agen.introducirAlumno(alum);
+        agen.introducirAlumno(alum); //se introducen todos los datos mediante la fucion de introducirAlumno
 
       break;
 
@@ -146,7 +148,7 @@ int main(){
 
       cout<<"1:Mostrar por DNI 2:Mostrar por Apellidos 3:Mostrar por grupo"<<endl;
       getchar();
-      cin>>menuMostrar;
+      cin>>menuMostrar; //Elegir metodo de busqueda
       switch (menuMostrar){
 
         case 1:
@@ -156,7 +158,7 @@ int main(){
         getline(cin, dnia);
         auxencontrar=agen.encontrarAlumno(dnia);
         if (auxencontrar==1){
-          alum=agen.mostrarAlumnodni(dnia);
+          alum=agen.mostrarAlumnodni(dnia); //funcion que devuelve la clase alumno con los datos del alumno buscado
           cout<<endl;
           cout<<"DNI: "<<alum.getDNI()<<endl;
           cout<<"Nombre: "<<alum.getNombre()<<endl;
@@ -170,7 +172,7 @@ int main(){
           cout<<"Parcialidad (0=Completo 1=Parcial): "<<alum.getParcialidad()<<endl;
           cout<<"Curso: "<<alum.getCurso()<<endl;
         }else{
-          cout<<"Alumno no encontrado."<<endl;
+          cout<<"Alumno no encontrado."<<endl; //en el caso de que el alumno no exista
         }
 
         break;
@@ -180,7 +182,7 @@ int main(){
         getchar();
         cout<<"Introduzca los apellidos separados por -> _. "<<endl;
         getline(cin,apellidosa);
-        agen.mostrarAlumnoapellidos(apellidosa);
+        agen.mostrarAlumnoapellidos(apellidosa); //se recurre a una funcion ya que pueden existir alumnos con los mismos apellidos
 
         break;
 
@@ -189,7 +191,7 @@ int main(){
         getchar();
         cout<<"Introduzca el grupo que desea buscar."<<endl;
         cin>>grupoa;
-        agen.mostrarAlumnogrupo(grupoa);
+        agen.mostrarAlumnogrupo(grupoa); //se recurre a una funcion ya que pueden existir varios alumnos en el mismo grupo
 
         break;
 
@@ -198,10 +200,10 @@ int main(){
 
       case 3:
 
-      if(agen.mostrarListado()==1){
+      if(agen.mostrarListado()==1){ //crea .md con los alumnos
         cout<<"Listado.md creado en el directorio."<<endl;
       }else{
-        cout<<"No hay alumnos para crear listado."<<endl;
+        cout<<"No hay alumnos para crear listado."<<endl; //error si no se puede crear lista por falta de datos
       }
 
       break;
@@ -212,7 +214,7 @@ int main(){
       cout<<"Introduzca el DNI del alumno que desea modificar."<<endl;
       getline(cin,dnia);
       auxdni=dnia;
-      auxencontrar=agen.encontrarAlumno(dnia);
+      auxencontrar=agen.encontrarAlumno(dnia); //funcion que modifica al alumno y retorna 1 si el alumno a modificar existe
       if (auxencontrar==1){
 
         cout<<"Introduzca DNI"<<endl; //set dni
@@ -322,7 +324,7 @@ int main(){
       getchar();
       cout<<"Introduzca DNI del alumno que desea eliminar."<<endl;
       getline(cin,dnia);
-      auxencontrar=agen.borrarAlumno(dnia);
+      auxencontrar=agen.borrarAlumno(dnia); //funcion que borra el alumno, retorna 1 si se elimina con exito
       if(auxencontrar==1){
         cout<<"Alumno encontrado y eliminado."<<endl;
       }
@@ -337,7 +339,7 @@ int main(){
       cout<<"Introduzca el DNI del alumno a buscar."<<endl;
       getchar();
       getline (cin, dnia);
-      auxencontrar=agen.encontrarAlumno(dnia);
+      auxencontrar=agen.encontrarAlumno(dnia); //retorna 1 si el alumno esta almacenado en la lista
       if (auxencontrar==1){
         cout<<"Alumno encontrado."<<endl;
       }else{
